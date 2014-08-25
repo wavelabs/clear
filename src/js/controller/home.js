@@ -1,5 +1,12 @@
 'use strict';
 
 app.controller('HomeCtrl', ['$scope', function ($scope) {
-  $scope.hi = 'Hola';
+  $scope.storie = {
+    who: 'Somebody',
+    what: 'Something',
+    why: 'I don\'t know',
+    description: 'explain this more!'
+  };
+
+  console.log($scope.storie);
 }]);
