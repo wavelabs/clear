@@ -124,7 +124,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['clean'], function() {
-  gulp.start('css:sass', 'css:libs', 'scripts:angular', 'scripts:vendors', 'scripts:app',
-    'templates:all', 'templates:index', 'watch');
+  gulp.start('css:sass', 'css:libs', 'scripts:angular', 'scripts:vendors',
+    'scripts:app', 'scripts:jshint', 'templates:all', 'templates:index',
+    'watch');
 });
 

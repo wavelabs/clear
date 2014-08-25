@@ -1,15 +1,22 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="ClearApp">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clear</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/angular-all.min.js"></script>
 </head>
-<body>
+<body
+  ng-controller="HomeCtrl">
 
-  <p>{{"Clear app"}}</p>
+  <div
+    ng-include=" 'views/shared/_top_nav.html' "></div>
 
+  <script src="js/angular-all.min.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 </html>

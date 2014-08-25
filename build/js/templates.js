@@ -1,0 +1,2 @@
+angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("views/404.html","<p>404 error page</p>");
+$templateCache.put("views/shared/_top_nav.html","<nav class=top-bar data-topbar role=navigation><ul class=title-area><li class=name><h1><a href=#>Clear App</a></h1></li><li class=\"toggle-topbar menu-icon\"><a href=#><span>Menu</span></a></li></ul></nav>");}]);
