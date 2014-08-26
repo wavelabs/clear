@@ -17,6 +17,7 @@
   "dependencies": {
     "angular-resource": "~1.2.23",
     "angular": "~1.2.23",
-    "foundation": "zurb/bower-foundation#~5.4.0"
+    "foundation": "zurb/bower-foundation#~5.4.0",
+    "angular-typeahead": "~0.2.1"
   }
 }

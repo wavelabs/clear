@@ -2,7 +2,7 @@
 
 app.controller('HomeCtrl', ['$scope', function ($scope) {
   $scope.storie = {
-    who: 'Somebody',
+    who: '',
     what: 'Something',
     why: 'I don\'t know',
     description: 'explain this more!'

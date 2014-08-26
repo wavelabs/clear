@@ -59,7 +59,8 @@ gulp.task('scripts:jshint', function () {
 gulp.task('scripts:angular', function () {
   return gulp.src([
     'bower_components/angular/angular.js',
-    'bower_components/angular-resource/angular-resource.js'
+    'bower_components/angular-resource/angular-resource.js',
+    'bower_components/angular-typeahead/angular-typeahead.js'
   ])
     .pipe(concat('angular-all.min.js'))
     .pipe(uglify())
@@ -68,7 +69,11 @@ gulp.task('scripts:angular', function () {
 });
 
 gulp.task('scripts:vendors', function () {
-  return gulp.src([''])
+  return gulp.src([
+    'bower_components/jquery/dist/jquery.js',
+    'bower_components/typeahead.js/dist/typeahead.jquery.js',
+    'bower_components/typeahead.js/dist/bloodhound.js'
+  ])
     .pipe(concat('vendors.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/js'))
@@ -117,7 +122,7 @@ gulp.task('templates:index', function() {
 
 // Watch
 gulp.task('watch', function() {
-  gulp.watch(paths.styles + '**/*.scss', ['sass']);
+  gulp.watch(paths.styles + '**/*.scss', ['css:sass']);
   gulp.watch(paths.scripts, ['scripts:app']);
   gulp.watch(paths.templatesAll, ['templates:all']);
   gulp.watch(paths.templatesIndex, ['templates:index']);

@@ -1,3 +1,3 @@
 'use strict';
 
-var app = angular.module('ClearApp', [ 'templates' ]);
+var app = angular.module('ClearApp', [ 'templates', 'siyfion.sfTypeahead' ]);

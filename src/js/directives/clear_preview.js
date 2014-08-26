@@ -7,5 +7,5 @@ app.directive('clearPreview', function () {
       storie: '='
     },
     templateUrl: 'views/_clear-preview.html'
-  }
+  };
 });
